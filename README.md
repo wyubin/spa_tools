@@ -11,3 +11,8 @@ dot2article.js: template module for multiple documents based on single settings
 control_panel.js: transform a dom into control panel
 mytooltip.js: tooltip for dom
 simple_tab.js: tab div for switch content dom
+
+The [Demo][] page
+## Requirements
+
+[demo]:	http://wyubin.github.io/spa_tools/index.html	"test for each module"

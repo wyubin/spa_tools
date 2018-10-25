@@ -1,42 +1,18 @@
-# gchartjs
-wrapper of google chart api datatable
+# spa_tools
+useful tools for spa construction
 
 ## Introduction
-Wrap the datatable of google chart api to adapt multiple plot module
+Including:
+navi_bar.js: navigation bar of spa
+Router.js: router of spa
+fetch.request.js: ajax by fetch api
+events_reg: register event on dom
+dot2article.js: template module for multiple documents based on single settings
+control_panel.js: transform a dom into control panel
+mytooltip.js: tooltip for dom
+simple_tab.js: tab div for switch content dom
 
 The [Demo][] page
-
 ## Requirements
-Need load google chart api and load packages in window.onload before render by it.
 
-And you need to require it when you use our script in browser
-```html
-	<script src="https://www.gstatic.com/charts/loader.js"></script>
-	<script src="./gchart.min.js"></script>
-	<script>
-		google.charts.load('current', {packages: ['corechart','treemap']});
-		google.charts.setOnLoadCallback(function(){plot();});
-	</script>
-```
-## Usage
-1. use gchart module to generate associated object
-```js
-	var tdata = [[1,2],[3,4]]; // 2 layer array
-	var colnames = ['cond1','cond2']; // item tag
-	var rownames = ['sample1','sample2'];// sample tag
-	var t_dt = gchart.data_transform('line',{
-		data:tdata,
-		rownames:rownames,
-		colnames:colnames
-	});
-	// t_dt wil be a object with 'mode','datatable','options'
-```
-
-2. render it by google chart api
-```js
-	var dom_chart = document.querySelector('#chart');
-	var mchart = new google.visualization[t_dt.mode](dom_chart);
-	mchart.draw(t_dt.datatable,t_dt.options);
-```
-
-[demo]:	http://wyubin.github.io/gchartjs/	"multiple plot theme for data"
+[demo]:	http://wyubin.github.io/spa_tools/index.html	"test for each module"
