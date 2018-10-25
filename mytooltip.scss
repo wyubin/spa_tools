@@ -1,0 +1,22 @@
+$bg_color: #000000; /* color of back background */
+$text_color: #fff; /* color of tooltip text */
+.mytooltip{
+	position: absolute;
+	z-index: 100;
+	&:before{
+		content:'';
+		display: block;
+		border: solid;
+		border-color: $bg_color transparent;
+		border-width: 0 .5em .5em 0;
+		width: 0;
+	}
+	>div.content{
+		background: $bg_color;
+		color: $text_color;
+		padding: .3em;
+	}
+	&.hide{
+		visibility: hidden;
+	}
+}

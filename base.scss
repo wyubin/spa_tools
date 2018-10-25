@@ -1,0 +1,108 @@
+/* navibar */
+$nv_ht_color:#999; /* lightbox margin color */
+$nv_at_color:#fff; /* lightbox body color */
+$nv_tcolor:#333; /* lightbox body color */
+.navi_bar{
+	background: linear-gradient(to left,$nv_ht_color,$nv_at_color);
+	width: 100%;
+	li{
+		>a{
+			color:$nv_tcolor;
+			padding: 0.2em 0.5em;
+			&.active{
+				color:$nv_at_color;
+				background:$nv_tcolor;
+			}
+		}
+		&:hover>a{
+			background:$nv_ht_color;
+		}
+	}
+}
+@media (min-width: 640px) {
+	.navi_bar>ul>li>a{
+		max-width: 200px;
+		font-size: 1.5em;
+	}
+}
+/* global style */
+body{
+	max-width: 1000px;
+	min-width:640px;
+	margin: 0 auto;
+	line-height: 1.5;
+	font-size: 1.2rem;
+}
+p{
+	text-indent: 2rem;
+}
+main>div{
+	padding: 0 0.5rem;
+}
+/* hide if class has hide */
+*.hide{
+	display:none;
+}
+/* highlight color */
+*.hl{
+	color:red;
+}
+/* center */
+*.center{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+/* simple table */
+table.simple {
+	border-collapse: collapse;
+	border: 1px solid black;
+	>th,td{
+		border: 1px solid black;
+	}
+}
+/* std plot dim */
+div.flex{
+	display: flex;
+	display: -webkit-flex;
+	flex-flow: row wrap;
+	-webkit-flex-flow: row wrap;
+	justify-content: space-around;
+}
+div.stdplot{
+	width:90%;
+	height:400px;
+	margin-left: auto;
+	margin-right: auto;
+}
+div.content{
+	width:100%;
+	height:100%;
+}
+/* form color */
+form.myform{
+	background:#f0f0f0;
+}
+/* font awosome icon setting */
+.fa{
+	padding: 0 0.3rem;
+	cursor:help;
+}
+/* default number input style */
+input[type="number"]{
+	width: 50px;
+}
+/* div_inline */
+.child_inline>*{
+	display: inline-block;
+}
+/* img frame */
+.imgf{
+	max-width:600px;
+	max-height:600px;
+	border-style: outset;
+}
+/* page break */
+.pb_before {
+	page-break-before: always;
+}

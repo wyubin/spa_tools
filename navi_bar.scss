@@ -1,0 +1,28 @@
+.navi_bar{
+	border-bottom: 1px solid rgba(0,0,0,.1);
+	box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+	display: block;
+	z-index: 1;
+	>ul{
+		display: flex;
+		display: -webkit-flex;
+		flex-wrap: wrap;
+		//justify-content: flex-start;
+		list-style: none;
+		margin: 0;
+		padding:0;
+		>li{
+			flex: 0 1 auto;
+			//margin: 0;
+			//padding: 0;
+			//position: relative;
+			>a{
+				//align-items: flex-start;
+				//line-height: 1.5;
+				display: flex;
+				text-decoration:none;
+			}
+		}
+	}
+}
+

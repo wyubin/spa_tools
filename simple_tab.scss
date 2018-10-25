@@ -1,0 +1,41 @@
+$bar_r_color:#999; /* lightbox margin color */
+$bar_l_color:#fff; /* lightbox body color */
+$text_color:#333; /* lightbox body color */
+.simple_tab{
+	border: 1px solid $bar_r_color;
+	>div.title{
+		background: linear-gradient(to left,$bar_r_color,$bar_l_color);
+		border-bottom: 1px solid rgba(0,0,0,.1);
+		width: 100%;
+		display: flex;
+		>span{
+			color:$text_color;
+			padding: 0.3rem 0.5rem;
+			&.active{
+				color:$bar_l_color;
+				background:$text_color;
+				pointer-events: none;
+			}
+			&.hide{
+				display:none;
+			}
+			&:hover{
+				background:$bar_r_color;
+			}
+		}
+	}
+	>div.content{
+		width: 100%;
+		height: inherit;
+		overflow: overlay;
+		//height: 100%;
+		>div{
+			display:none;
+			&.active{
+				//height: 100%;
+				display:block;
+				position: relative;
+			}
+		}
+	}
+}

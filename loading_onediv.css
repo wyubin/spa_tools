@@ -1,0 +1,22 @@
+/* css icon from http://one-div.com/ */
+@keyframes loading-rotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.loading {
+	opacity: .8;
+	display: block;
+	border-radius: 50%;
+
+	width: .5rem;
+	height: .5rem;
+
+	box-shadow:
+		0 -.8rem       0 0 rgba(0,0,0,1),
+		-.55rem -.55rem 0 0 rgba(0,0,0,.75),
+		-.8rem 0       0 0 rgba(0,0,0,.50),
+		-.55rem .55rem  0 0 rgba(0,0,0,.25)
+	;
+	animation: .85s loading-rotate steps(8) infinite;
+}

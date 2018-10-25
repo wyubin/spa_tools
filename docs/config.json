@@ -1,0 +1,24 @@
+{
+	"nav":{
+		"menu":[
+			{
+				"name":"readme1",
+				"title":"READ ME"
+			},
+			{
+				"name":"readme2",
+				"title":"READ ME2"
+			}
+		],
+		"home":"readme1"
+	},
+	"page2args":{
+		"readme1":["readme",{"page_ver":"ver1"}],
+		"readme2":["readme",{"page_ver":"ver2"}]
+	},
+	"url":{},
+	"json":{
+		"readme":"./readme.json"
+	},
+	"ms_loading":3000
+}
