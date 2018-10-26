@@ -1,0 +1,23 @@
+{
+  "name": "spa_tools",
+  "version": "1.0.0",
+  "description": "useful tools for spa construction",
+  "main": "app.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wyubin/spa_tools.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wyubin/spa_tools/issues"
+  },
+  "homepage": "https://github.com/wyubin/spa_tools#readme"
+}
