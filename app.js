@@ -7,7 +7,6 @@ var navi_bar = require('./navi_bar.js'),
 	},
 	tools = {
 		ajax:require('./fetch.request.js'),
-		gchart: require('../gchart/gchart.js'),
 		dot2article: require('./dot2article.js'),
 		events_reg: require('./events_reg.js'),
 		control_panel: require('./control_panel.js'),

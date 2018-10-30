@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/wyubin/spa_tools/issues"
   },
-  "homepage": "https://github.com/wyubin/spa_tools#readme"
+  "homepage": "https://github.com/wyubin/spa_tools#readme",
+  "dependencies": {
+		"dot": "^1.1.2"
+  }
 }
