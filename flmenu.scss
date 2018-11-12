@@ -1,0 +1,38 @@
+$bg_color:#000; /* flmenu bg color */
+$text_color:#fff; /* flmenu text color */
+.flmenu{
+	position: fixed;
+	z-index:9999;
+	.label,.menu>div{
+		padding:5px 10px;
+		opacity:0.50;
+		background:$bg_color;
+		color:$text_color;
+	}
+	/*
+	.label{
+		font-size:1rem;
+		font-weight:bold;
+	}
+	*/
+	.menu.hide{
+		display:none;
+	}
+	.menu>div,.ham{
+		cursor: pointer;
+	}
+	.menu>div{
+		border-top:1px solid #333;
+		&:hover{
+			opacity:1;
+		}
+	}
+	.ham{/* menu icon */
+		width:1rem;
+		height:0.25rem;
+		content:'';
+		border-bottom: 0.6rem double $text_color;
+		border-top: 0.2rem solid $text_color;
+		//background-color:$bg_color;
+	}
+}
