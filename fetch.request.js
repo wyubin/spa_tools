@@ -15,10 +15,13 @@ module.exports.ajaxcore = function(method,url,data){
 			t_url = npm_url.format({pathname:t_url,query:data});
 		}else if(method=='POST'){
 			// let String and FormData just pass
-			t_data = data.constructor.name != 'Object' ? data : Object.keys(data).map(
-				function(k){ return encodeURIComponent(k) + '=' + encodeURIComponent(data[k]) }
-			).join('&');
+			t_data = data.constructor.name != 'Object' ? data : JSON.stringify(data);
 			t_init = {method:"POST",body:t_data};
+			if(data.constructor.name == 'Object'){
+				t_init.headers={
+					'content-type': 'application/json'
+				};
+			}
 		}
 	}
 	return fetch(t_url,t_init).then(function(resp){return resp.text();});
